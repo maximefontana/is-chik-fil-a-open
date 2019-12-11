@@ -59,3 +59,9 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
+
+class ActionDispatch::Request
+  def remote_ip
+    "73.169.249.81"
+  end
+end
