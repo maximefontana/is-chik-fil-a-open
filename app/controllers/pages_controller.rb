@@ -4,9 +4,7 @@ class PagesController < ApplicationController
 
     if @location.latitude
       lat = @location.latitude
-      lat = 47 if lat == nil
       lon = @location.longitude
-      lon = -121 if lon == nil
 
       url = "https://dev.virtualearth.net/REST/v1/LocalSearch/?query=chik-fil-a&userLocation=#{lat}, #{lon}&key=Ar-ZG4zcP2T6IUb46ga7AIe-pdI5nM1byORM-J9nKnw771uv-MxRFD7gslcsi0gT"
       body = RestClient.get(url)
