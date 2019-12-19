@@ -5,8 +5,8 @@ Geocoder.configure(
   # ip_lookup: :ipinfo_io,      # name of IP address geocoding service (symbol)
   # language: :en,              # ISO-639 language code
   # use_https: false,           # use HTTPS for lookup requests? (if supported)
-  # http_proxy: nil,            # HTTP proxy server (user:pass@host:port)
-  # https_proxy: ENV['QUOTAGUARD_URL'],           # HTTPS proxy server (user:pass@host:port)
+  # http_proxy: ENV['QUOTAGUARD_URL'],            # HTTP proxy server (user:pass@host:port)
+  # https_proxy: nil,           # HTTPS proxy server (user:pass@host:port)
   # api_key: "Ar-ZG4zcP2T6IUb46ga7AIe-pdI5nM1byORM-J9nKnw771uv-MxRFD7gslcsi0gT",               # API key for geocoding service
   # cache: nil,                 # cache object (must respond to #[], #[]=, and #del)
   # cache_prefix: 'geocoder:',  # prefix (string) to use for all cache keys
