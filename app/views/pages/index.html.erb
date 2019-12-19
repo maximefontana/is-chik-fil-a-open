@@ -1,11 +1,11 @@
 <div class="page-container">
   <div class="text-container">
     <% if Time.now.sunday? %>
-      <h1 class="text">NO</h1>
+      <h1 class="text" style="color: red">NO</h1>
     <% elsif Time.now.hour > 21 || Time.now.hour < 6 %>
-      <h1 class="text">MAYBE</h1>
+      <h1 class="text" style="color: green">MAYBE</h1>
     <% else %>
-      <h1 class="text">YES</h1>
+      <h1 class="text" style="color: black">YES</h1>
     <% end %>
   </div>
   <% if @distance %>
